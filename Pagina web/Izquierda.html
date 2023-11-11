@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Barra Izquierda</title>
+</head>
+<h1>INDICE</h1>
+<body bgcolor="orange">
+     <style>
+        body {
+            font-size: 18px;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #ffff;
+            display: block;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #007BFF;
+        }
+    </style>
+</head>
+    <ul>
+
+       <li><a  href="javascript:void(0)" onclick="mostrarContenido('Derecha.html')">HOME </a></li><br><br>
+       <li><a href="javascript:void(0)" onclick="mostrarContenido('Animalia.html')">Reino Animalia </a></li><br><br>
+         <li><a href="javascript:void(0)" onclick="mostrarContenido('Plantae.html')">Reino Plantae </a></li><br><br>
+          <li><a href="javascript:void(0)" onclick="mostrarContenido('Fungi.html')">Reino Fungi </a></li><br><br>
+           <li><a href="javascript:void(0)" onclick="mostrarContenido('protista.html')">Reino protista </a></li>
+           <left><img src="https://imgs.search.brave.com/gUPp516v541djNYGWTxx-iA138x_H9dSlqH2hAb9Zkk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pZXFm/Yi5jb20vd3AtY29u/dGVudC91cGxvYWRz/L0Rpc2VuJUNDJTgz/by1zaW4tdGklQ0Ml/ODF0dWxvLTgwLmpw/Zw" width="200" height="150"></left>
+           <br>
+        <!-- Agrega más elementos según necesites -->
+    </ul>
+    
+    <p>By: Stefano Modena<br> 1ro Informatica</p>
+    <script>
+        function mostrarContenido(contenido) {
+            parent.frames['derecho'].location.href = contenido;
+        }
+    </script>
+</body>
+</html>
